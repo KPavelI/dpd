@@ -8,7 +8,7 @@ You should compile fortran file and modify dpdconf.dat as you wish.
 
 In this implementation periodic boundary conditions works only for the solvent particles (type 4 - N), grid particles are not moving at all (type 3 - P), chain particles can not move outside the box (type 1 - O and 2 - S).
 
-The detailed description of implementation DPD can be found in [1]. This program has been used in the following works:
+The detailed description of DPD can be found in [1]. This program has been used in the following works:
  
 (1)     Gavrilov, A. A.; Chertovich, A. V. Copolymerization of Partly Incompatible Monomers: An Insight from Computer Simulations. Macromolecules 2017, 50 (12), 4677–4685.
 
