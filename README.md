@@ -1,15 +1,15 @@
 # Dissipative particle dynamics
 
-Dissiaptive particle dynamics.
-
 This is 2D domain decomposition realization.
 
 You should compile fortran file and modify dpdconf.dat as you wish.
 
 In this implementation periodic boundary conditions works only for the solvent particles (type 4 - N), grid particles are not moving at all (type 3 - P), chain particles can not move outside the box (type 1 - O and 2 - S).
 
-The detailed description of DPD can be found in [1]. This program has been used in the following works:
- 
+This program has been used in the following works [1-7]. The detailed description of DPD can be found in [1].
+
+# Refs.
+
 (1)     Gavrilov, A. A.; Chertovich, A. V. Copolymerization of Partly Incompatible Monomers: An Insight from Computer Simulations. Macromolecules 2017, 50 (12), 4677–4685.
 
 (2)     Tamm, M. V.; Nazarov, L. I.; Gavrilov, A. A.; Chertovich, A. V. Anomalous Diffusion in Fractal Globules. Phys. Rev. Lett. 2015, 114 (17), 178102.
@@ -24,5 +24,4 @@ The detailed description of DPD can be found in [1]. This program has been used 
 
 (7)     Ulianov, S., Khrameeva, E., Gavrilov, A., Flyamer, I., Kos, P., Mikhaleva, E., Penin, A., Logacheva, M., Imakaev, M., Chertovich, A., Gelfand, M., Shevelyov, Y., and Razin, S. Active chromatin and transcription play a key role in chromosome partitioning into topologically associating domains." Genome research 2016, 26 (1), 70-84.
 
-Refs.
-[1] Groot, Robert D., and Patrick B. Warren. "Dissipative particle dynamics: Bridging the gap between atomistic and mesoscopic simulation." The Journal of chemical physics 107.11 (1997): 4423-4435.
+(8) Groot, Robert D., and Patrick B. Warren. "Dissipative particle dynamics: Bridging the gap between atomistic and mesoscopic simulation." The Journal of chemical physics 1997, 107 (11), 4423-4435.
