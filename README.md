@@ -2,11 +2,11 @@
 
 Dissiaptive particle dynamics.
 
-2D domain decomposition realization.
+This is 2D domain decomposition realization.
 
-You should compile single file and modify dpdconf.dat as you wish.
+You should compile fortran file and modify dpdconf.dat as you wish.
 
-In this implementation PBC works only for the solvent particles (type 4 - N), grid particles are not moving (type 3 - P), chain particles can not penetrate outside the box (type 1 - O and 2 - S).
+In this implementation periodic boundary conditions works only for the solvent particles (type 4 - N), grid particles are not moving at all (type 3 - P), chain particles can not move outside the box (type 1 - O and 2 - S).
 
 The detailed description of implementation DPD can be found in [1]. This program has been used in the following works:
  
