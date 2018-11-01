@@ -1,6 +1,6 @@
 # Dissipative particle dynamics
 
-This is 2D domain decomposition realization.
+This is 2D domain decomposition implementation.
 
 You should compile fortran file and modify dpdconf.dat as you wish.
 
