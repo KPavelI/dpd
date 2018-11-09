@@ -1,14 +1,36 @@
 # Dissipative particle dynamics
 
-This is 2D domain decomposition implementation.
+This is 2D domain decomposition parallel implementation.
 
-You should compile fortran file and modify dpdconf.dat as you wish.
+## Hardware requirements
 
-In this implementation periodic boundary conditions works only for the solvent particles (type 4 - N), grid particles are not moving at all (type 3 - P), chain particles can not move outside the box (type 1 - O and 2 - S).
+DPD requires a standard computer with enough RAM to support the operations defined by a user but the simulating system size depends on RAM. For minimal performance, this will be a computer with about 2 GB of RAM. For optimal performance, we recommend to use Supercomputere facilities:
 
+## Software requirements
+
+This package is supported for Linux operating systems. The package has been tested on the following systems:
+
+Linux: Ubuntu 16.04, CentOS Linux (release 7.1.1503)
+Mac OSX:
+Windows:
+
+You should compile fortran file dpd.F90 with GNU Fortran or Intel Fortran compilers. To run the application you need configure file dpdconf.dat, input files *.mol and executable dpd. Then just do:
+```
+./dpd
+```
+## Overview
+In this implementation periodic boundary conditions works only for the solvent particles (type 4 - N), grid particles are not moving at all (type 3 - P), chain particles can not move outside the box (type 1 - O and 2 - S). There are three stages (see dpdconf.dat): the first one is to equilibrate system, the second one is to simulate bonds formation and the third one is to simulate system without bonds formation.
+
+## Example
+In example folder you will find two subfolders: `demo` and `reproduce`. 
+[-] In the first folder there is an example of small cell with simple solvent. Сalculation takes about 1 minutes. Finally you will get 4 files: initial system, after first stage, after second and after third.
+[-] In the second folder there are parameters to reproduce the results. Strongly recommend to use Cluster facilities because the system is large.
+
+
+## Citation
 This program has been used in the following works [1-7]. The detailed description of DPD can be found in [8].
 
-# Refs.
+## Refs.
 
 (1)     Gavrilov, A. A.; Chertovich, A. V. Copolymerization of Partly Incompatible Monomers: An Insight from Computer Simulations. Macromolecules 2017, 50 (12), 4677–4685.
 
