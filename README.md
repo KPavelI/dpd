@@ -18,11 +18,11 @@ In `example` folder you will find the `makefile`. Put together `makefile` and `d
 ```
 make
 ```
-in terminal. You should compile fortran file dpd.F90 with GNU Fortran (default) or Intel Fortran compiler. To run the application you need configuration file dpdconf.dat, input files *.mol and executable dpd. Then just do:
+in terminal. So you compile fortran file dpd.F90 with GNU Fortran (default) or Intel Fortran compiler. To run the application you need configuration file `dpdconf.dat`, input files `*.mol` and executable `dpd`. Then just type:
 ```
 ./dpd
 ```
-Example to run you will find in `example` folder.
+You will find test sets in `example` folder.
 
 ## Overview
 In this implementation periodic boundary conditions works only for the solvent particles (type 4 - N), grid particles are not moving at all (type 3 - P), chain particles can not move outside the box (type 1 - O and 2 - S). There are three stages (see dpdconf.dat): the first one is to equilibrate system, the second one is to simulate bonds formation and the third one is to simulate system without bonds formation. To visualize output restart files you may convert it to mol2 via `rst2mol2.py`. You will find it in `example` folder.
@@ -34,7 +34,7 @@ In example folder you will find two subfolders: `demo` and `reproduction`.
 
 
 ## Citation
-This program has been used in the following works [1-7], please cite some of this in case of using this program. The detailed description of DPD can be found in [8].
+This program has been used in the following works [1-7], please cite some of this in case of using this code. The detailed description of DPD can be found in [8].
 
 ## Refs.
 
