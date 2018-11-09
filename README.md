@@ -12,12 +12,20 @@ This package is supported for Linux operating systems. The package has been test
 
 Linux: Ubuntu 16.04, CentOS Linux (release 7.1.1503)
 
-You should compile fortran file dpd.F90 with GNU Fortran or Intel Fortran compilers. To run the application you need configuration file dpdconf.dat, input files *.mol and executable dpd. Then just do:
+## Installation guide
+
+In `example` folder you will find the `makefile`. Put together `makefile` and `dpd.F90` and type 
+```
+make
+```
+in terminal. You should compile fortran file dpd.F90 with GNU Fortran (default) or Intel Fortran compiler. To run the application you need configuration file dpdconf.dat, input files *.mol and executable dpd. Then just do:
 ```
 ./dpd
 ```
+Example to run you will find in `example` folder.
+
 ## Overview
-In this implementation periodic boundary conditions works only for the solvent particles (type 4 - N), grid particles are not moving at all (type 3 - P), chain particles can not move outside the box (type 1 - O and 2 - S). There are three stages (see dpdconf.dat): the first one is to equilibrate system, the second one is to simulate bonds formation and the third one is to simulate system without bonds formation.
+In this implementation periodic boundary conditions works only for the solvent particles (type 4 - N), grid particles are not moving at all (type 3 - P), chain particles can not move outside the box (type 1 - O and 2 - S). There are three stages (see dpdconf.dat): the first one is to equilibrate system, the second one is to simulate bonds formation and the third one is to simulate system without bonds formation. To visualize output restart files you may convert it to mol2 via `rst2mol2.py`. You will find it in `example` folder.
 
 ## Example
 In example folder you will find two subfolders: `demo` and `reproduction`. 
