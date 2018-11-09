@@ -22,7 +22,7 @@ You should compile fortran file dpd.F90 with GNU Fortran or Intel Fortran compil
 In this implementation periodic boundary conditions works only for the solvent particles (type 4 - N), grid particles are not moving at all (type 3 - P), chain particles can not move outside the box (type 1 - O and 2 - S). There are three stages (see dpdconf.dat): the first one is to equilibrate system, the second one is to simulate bonds formation and the third one is to simulate system without bonds formation.
 
 ## Example
-In example folder you will find two subfolders: `demo` and `reproduce`. 
+In example folder you will find two subfolders: `demo` and `reproduction`. 
  - In the first folder there is an example of small cell with simple solvent. Сalculation takes about 1 minutes. Finally you will get 4 files: initial system, after first stage, after second and after third.
  - In the second folder there are parameters to reproduce the results. Strongly recommend to use Cluster facilities because the system is large.
 
