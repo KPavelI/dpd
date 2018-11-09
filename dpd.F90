@@ -1586,7 +1586,7 @@ real*4,pointer :: fx(:),fy(:),fz(:) ! size sz
 real*4,pointer :: vx(:),vy(:),vz(:) ! size sz 
 real*4 dt,dt2
 integer*4 i,natms,natmsfan
-integer*1,pointer,static :: kindp(:,:)
+integer*1,pointer :: kindp(:,:)
 logical init/.true./
 
 ! set initial value
@@ -2094,7 +2094,7 @@ common /ptype/ kindp
 real*4,pointer :: vx(:),vy(:),vz(:) ! size sz 
 real*4 vom(3)
 integer*4 i,natms,natmsfan,npall
-integer*1,pointer,static :: kindp(:,:)
+integer*1,pointer :: kindp(:,:)
 
 ! velocity of the center of mass
 vom=0
@@ -2604,7 +2604,9 @@ do iat=iatm1,iatm2
             ! angle bonds can't be broken
             change=.false.
             do j=1,ca(iat,0)
-                if(angles(ca(iat,j)*3-2)==cn(iat,i).or.angles(ca(iat,j)*3-1)==cn(iat,i).or.angles(ca(iat,j)*3)==cn(iat,i)) change=.true.
+                if(angles(ca(iat,j)*3-2)==cn(iat,i).or.angles(ca(iat,j)*3-1)==cn(iat,i).or.angles(ca(iat,j)*3)==cn(iat,i)) then
+                    change=.true.
+                end if
             end do
 
             ! probability test 
@@ -3518,7 +3520,7 @@ do k=1,snum
         
             do j=1,nat
         
-                ! функционализация по кол-ву связей
+                ! пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
                 
                 if (cn(j,0)<6) then
                     if (uni()<graftdens) then
