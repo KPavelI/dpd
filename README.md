@@ -11,10 +11,8 @@ DPD requires a standard computer with enough RAM to support the operations defin
 This package is supported for Linux operating systems. The package has been tested on the following systems:
 
 Linux: Ubuntu 16.04, CentOS Linux (release 7.1.1503)
-Mac OSX:
-Windows:
 
-You should compile fortran file dpd.F90 with GNU Fortran or Intel Fortran compilers. To run the application you need configure file dpdconf.dat, input files *.mol and executable dpd. Then just do:
+You should compile fortran file dpd.F90 with GNU Fortran or Intel Fortran compilers. To run the application you need configuration file dpdconf.dat, input files *.mol and executable dpd. Then just do:
 ```
 ./dpd
 ```
@@ -28,7 +26,7 @@ In example folder you will find two subfolders: `demo` and `reproduction`.
 
 
 ## Citation
-This program has been used in the following works [1-7]. The detailed description of DPD can be found in [8].
+This program has been used in the following works [1-7], please cite some of this in case of using this program. The detailed description of DPD can be found in [8].
 
 ## Refs.
 
