@@ -4,7 +4,7 @@ This is 2D domain decomposition parallel implementation.
 
 ## Hardware requirements
 
-DPD requires a standard computer with enough RAM to support the operations defined by a user but the simulating system size depends on RAM. For minimal performance, this will be a computer with about 2 GB of RAM. For optimal performance, we recommend to use Supercomputere facilities:
+DPD requires a standard computer with enough RAM to support the operations defined by a user but the simulating system size depends on RAM. For minimal performance, this will be a computer with about 2 GB of RAM. For optimal performance, we recommend to use Supercomputer facilities:
 
 ## Software requirements
 
