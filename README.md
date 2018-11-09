@@ -23,8 +23,8 @@ In this implementation periodic boundary conditions works only for the solvent p
 
 ## Example
 In example folder you will find two subfolders: `demo` and `reproduce`. 
-[-] In the first folder there is an example of small cell with simple solvent. Сalculation takes about 1 minutes. Finally you will get 4 files: initial system, after first stage, after second and after third.
-[-] In the second folder there are parameters to reproduce the results. Strongly recommend to use Cluster facilities because the system is large.
+ - In the first folder there is an example of small cell with simple solvent. Сalculation takes about 1 minutes. Finally you will get 4 files: initial system, after first stage, after second and after third.
+ - In the second folder there are parameters to reproduce the results. Strongly recommend to use Cluster facilities because the system is large.
 
 
 ## Citation
